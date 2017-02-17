@@ -71,7 +71,8 @@ module OmniAuth
                         @auth_data['Surname']
                       ].reject { |e| e.to_s.empty? }.join(' '),
           first_name: @auth_data['Name'],
-          last_name:  @auth_data['Surname']
+          last_name:  @auth_data['Surname'],
+          email:      @auth_data['E-Mail']
         }
       end
 
